@@ -15,8 +15,8 @@ services:
         arguments:
             filter: '@dms.filter'
             auto_filter: '%dms_filter.auto_filter_forms%'
-        tags:
-            - { name: form.type_extension, alias: form }
+        #tags:
+        #    - { name: form.type_extension, alias: form }
 
     dms.filter.container_loader:
         class: DMS\Bundle\FilterBundle\Loader\ContainerAwareLoader
